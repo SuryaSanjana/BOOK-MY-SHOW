@@ -19,3 +19,5 @@
 //->Routes
 //->pages
 //->components
+
+//HOC->Higher Order Components
