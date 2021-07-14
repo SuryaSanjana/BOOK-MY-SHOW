@@ -1,7 +1,7 @@
 import { Route } from "react-router-dom";
 
 //  importing HOC
-import DefaultHOC from "./HOC/default.HOC";
+import DefaultHOC from "./HOC/Default.HOC";
 
 // Components
 import Temp from "./components/temp";
@@ -9,7 +9,7 @@ import Temp from "./components/temp";
 function App() {
   return (
     <>
-      <DefaultHOC path="/" exact component={Temp} />
+      <DefaultHOC path="/" exact component= {Temp} />
     </>
   );
 }
