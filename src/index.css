@@ -3,11 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-prev {
+/* previous arrow key*/
+.slick-prev {       
     left: 3% !important;
     z-index: 1;
   }
-  
+/*right arrow key*/ 
   .slick-next {
     right: 3% !important;
     z-index: 1;

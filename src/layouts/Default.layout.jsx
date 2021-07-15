@@ -3,7 +3,7 @@ import React from "react";
 
 
 
-//commponents;
+//components;
 import Navbar from "../components/Navbar/navbar.component";
 import HeroCarousel from "../components/HeroCarousel/HeroCarousel.component";
 const DefaultLayout=(props)=>{

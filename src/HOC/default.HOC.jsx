@@ -9,11 +9,11 @@ const DefaultHOC=({component :Component,...rest})=>{
         <>
           <Route 
              {...rest} 
-             component = {(props)=>{
+             component = {(props)=>(
                <DefaultLayout>
                    <Component {...props}/> 
                </DefaultLayout>
-             }} 
+             )}
             />     
         </>
     );

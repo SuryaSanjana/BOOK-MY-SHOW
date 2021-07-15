@@ -2,9 +2,12 @@ import React from "react";
 import HeroSlider from "react-slick";
 
 
-// Import css files
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// // Import css files
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
+//importing arrow.components
+import { NextArrow,PrevArrow } from "./Arrows.component";
 
 const HeroCarousel=()=>{
     const settingsLG = {
@@ -15,6 +18,8 @@ const HeroCarousel=()=>{
         slidesToShow: 1,
         infinite: true,
         slidesToScroll: 1,
+        nextArrow:<NextArrow />,
+        prevarrow:<PrevArrow />
     };
     const settings={
         arrows:true,
@@ -23,7 +28,8 @@ const HeroCarousel=()=>{
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-         
+        nextArrow:<NextArrow />,
+        prevarrow:<PrevArrow />  
     }
 
 
@@ -39,28 +45,28 @@ const HeroCarousel=()=>{
 
   return (
    <>
-     <div className="lg:hidden">
+     <div className="lg:hidden"> {/*for only small and medium devices,large screen hidden */}
          <HeroSlider {...settings}>
              {images.map((image) => (
                  <div className="w-full h-56 md:h-80 py-3 ">
-                     <img src={image} alt="testing" className="w-full h-full" />
+                    <img src={image} alt="testing" className="w-full h-full" />
                   </div>
                 ))}
           </HeroSlider>
       </div>
 
       <div className="hidden lg:block">
-            <HeroSlider {...settingsLG}>
-              {images.map((image) => (
-                  <div className="w-full h-96 px-2 py-3">
-                     <img
-                      src={image}
-                      alt="testing"
-                      className="w-full h-full rounded-md"
-                      />
-                    </div>
-                ))}
-            </HeroSlider>
+        <HeroSlider {...settingsLG}>
+          {images.map((image) => (
+            <div className="w-full h-96 px-2 py-3">
+             <img
+             src={image}
+             alt="testing"
+             className="w-full h-full rounded-md"
+             />
+           </div>      
+          ))}
+        </HeroSlider>  
       </div>
     </>
   );
