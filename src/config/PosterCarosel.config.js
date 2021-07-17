@@ -10,14 +10,14 @@
         breakpoints:1024,
         settings:{
          slidesToShow:3,
-         slideToScroll:2,
-         infinite:true,
+         slideToScroll:3,
+         Infinity:true,
         },
     },
     {
-     breakpoints:768,
+     breakpoints:600,
      settings:{
-      slidesToShow:3,
+      slidesToShow:2,
       slideToScroll:2,
       InitialSlide:1,
      },
@@ -27,6 +27,7 @@
      settings:{
       slidesToShow:3,
       slideToScroll:2,
+      InitialSlide:1,
      
      },
     },
