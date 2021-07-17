@@ -8,8 +8,10 @@ import React from "react";
       <div
        className={props.className} 
        style={{...props.style,backgroundColor:"black"}}  //all the inline styles must be an object and in camilcase
-        onClick={props.onClick}
+        onClick={props.onClick} 
+
         />
+    
      </>
     );
 };
@@ -20,8 +22,8 @@ export const PrevArrow=(props)=>{
       <div 
        className={props.className} 
        style={{...props.style,backgroundColor:"black"}}  //all the inline styles must be an object and in camilcase
-        onClick={props.onClick}
-        />
+        onClick={props.onClick}/>
+    
      </>
     );
 };

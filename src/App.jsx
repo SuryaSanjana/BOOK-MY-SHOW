@@ -7,17 +7,19 @@ import DefaultHOC from "./HOC/Default.HOC";
 // import Temp from "./components/temp";
 //Components-pages
 import HomePage from "./pages/Home.page";
-
+import MoviePage from "./pages/Movie.page";
 
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {
   return (
     <>
      
       <DefaultHOC path="/" exact component= {HomePage} />
+      <DefaultHOC path="/" exact component= {MoviePage} />
     </>
   );
 };
