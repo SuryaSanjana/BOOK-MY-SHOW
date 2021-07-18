@@ -8,6 +8,8 @@ import MovieHOC from "./HOC/Movie.HOC";
 //Components-pages
 import HomePage from "./pages/Home.page";
 import MoviePage from "./pages/Movie.page";
+import PlaysPage from "./pages/Plays.page";
+
 
 // Import css files
 import "slick-carousel/slick/slick.css";
@@ -21,6 +23,7 @@ function App() {
      
       <DefaultHOC path="/" exact component= {HomePage} />
       <MovieHOC path="/movie/:id" exact component= {MoviePage} />
+      <DefaultHOC path="/plays" exact component={PlaysPage} />
     </>
   );
 };

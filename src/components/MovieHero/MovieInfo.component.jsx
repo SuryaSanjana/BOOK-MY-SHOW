@@ -20,7 +20,7 @@ const MovieInfo = () => {
           Justice League
         </h1>
         <div className="flex flex-col-reverse gap-3 lg:gap-5 lg:flex-col">
-          <div className="text-white font-light flex flex-col gap-2 md:px-4">
+          <div className="text-white font-light flex flex-col gap-2 md:px-4 px-2">
              <h4>4k &bull; English &bull; Action</h4>
              <h4>1h 53m &bull; Action, Sci-Fi, Thriller &bull; 13+</h4>
           </div>
